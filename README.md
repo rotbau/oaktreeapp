@@ -8,7 +8,7 @@ Sample Web Frontend and Backend application for Oaktree
 ```
 git clone https://github.com/rotbau/oaktreeapp.git
 ```
-or download Zip file for repo
+or Click on Code button and select download Zip
 
 ### Create Namespaces
 ```
