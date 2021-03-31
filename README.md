@@ -1,4 +1,4 @@
-# oaktreeapp
+# Oaktree Test Application
 
 Sample Web Frontend and Backend application for Oaktree
 
