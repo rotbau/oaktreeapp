@@ -27,7 +27,9 @@ kubectl apply -f product-store/
 kubectl -n product-store get svc
 ```
 
-Look for the EXTERNAL-IP for the product-store service.  If EXTERNAL-IP is pending you may need to add a load balancer
+Look for the EXTERNAL-IP for the product-store service.  Open this IP in your web browser to access application UI.
 
 NAME            TYPE           CLUSTER-IP      EXTERNAL-IP    PORT(S)        AGE
 product-store   LoadBalancer   100.69.66.117   172.31.3.190   80:30373/TCP   13s
+
+Note: If EXTERNAL-IP is. pending you may need to add a loadbalancer
