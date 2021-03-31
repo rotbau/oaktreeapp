@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: product-api
+  name: product-api
+  namespace: product-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: product-api
+  template:
+    metadata:
+      labels:
+        app: product-api
+    spec:
+      containers:
+      - image:  tezizzm/product-api:imgpkg-sha256-21669cf246ddfe8900e6ac73070d557926d1ba54bd728f471df75d90aa0aaf08 
+        name: product-api
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
